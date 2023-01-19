@@ -101,6 +101,14 @@ input:focus~.barra::before{
   width: 100%;
 }
 
+.link {
+  color:#1d5bce ;
+  margin-bottom: 15px;
+  text-decoration: none;
+ 
+}
+
+
 
 button{
   font-family: 'roboto';
