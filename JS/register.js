@@ -1,13 +1,11 @@
-function userRegister (){
-  const usr = document.getElementById("use").value;
-  const email = document.getElementById("email").value;
-  const pass  = document.getElementById("password").value;
-   
-  
-   let  user =localStorage.setItem("users",usr);
-   let  ema =localStorage.setItem("email",email);
-   let  pas =localStorage.setItem("password",pass)
+let  userRegister = () => {
 
-  
-  
+  let usr   = document.getElementById("use").value;
+  let email = document.getElementById("email").value;
+  let pass  = document.getElementById("password").value
+
+  localStorage.setItem("user",usr);
+  localStorage.setItem("email",email);
+  localStorage.setItem("password",pass);
+  window.location = '../index.html';
 }
