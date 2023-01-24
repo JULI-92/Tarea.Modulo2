@@ -1,41 +1,34 @@
-// simulando db
-const users = [
-  {
-    name: 'juli',
-    email: 'juli@gmail.com',
-    password: '123',
-  },
-  
-];
-const userJson = JSON.stringify(users);
-window.localStorage.setItem('users', userJson);
+
+const login = document.querySelector('.login');
 
 const userLogin = (event) => {
   event.preventDefault()
-  const emailInput = document.login.email.value.toLowerCase();
-  const passwordInput = document.login.password.value;
-  const emailValidation = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-  if (!emailValidation.test(emailInput)) {
-    alert('El email no tiene un formato correcto');
-    return;
-  }
-
-  let userLog;
-  let trueUserFlag;
-  users.map((user) => {
-    if (emailInput === user.email.toLowerCase() && passwordInput === user.password) {
-    trueUserFlag = true;
-    userLog = user;
+  const emailInput =document.getElementById("useremail").value.toLowerCase();
+  const passwordInput = document.getElementById("contrasena").value;
+  console.log(emailInput);
+  console.log(passwordInput);
+  const Email = localStorage.getItem("email");
+  const PassWord = localStorage.getItem("pars");
+  console.log(Email);
+  console.log(PassWord) ;
+  if( emailInput == "" && passwordInput == ""){
+    alert("opp")
+}
+else
+{
+    if(emailInput == Email && passwordInput == PassWord){
+        alert("si")
+        
+    }else
+    {
+        alert("no")
     }
-  });
-  if (trueUserFlag) {  
-    alert('Bienvenido');
-    delete userLog.password;
-    localStorage.setItem('userLog', JSON.stringify(userLog));
-    window.location = '../PAGES/homepage.html';
-  } else {
-    alert('Usuario o contraseña incorrecto.');
-  }
 };
+
+
+};
+
+
+
 
 

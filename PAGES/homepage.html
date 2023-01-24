@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ristorante Italiano</title>
+    <title>Restorante Peruano</title>
     <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
 
@@ -28,6 +27,8 @@
                     <a href="#">Menú</a>
                     <a href="#">Chef</a>
                     <a href="#">Contacto</a>
+                    <a href="#" onclick="closeSesion()">Cerrar Sesion</a>
+                      
                 </nav>
                 <div class="hamburguesa">
                     <span></span><span></span><span></span>
@@ -37,8 +38,8 @@
         <div class="contenido-header">
             <div class="contenedor-encabezado">
                 <div class="texto-encabezado">
-                    <h2>Accoglienza!</h2>
-                    <a href="#" class="btn bordes">Il nostro menú</a>
+                    <h2>Hospitalidad!</h2>
+                    <a href="#" class="btn bordes">Nuestro menú</a>
                 </div>
                 <video autoplay loop muted>
                     <source src="/IMAGE/bg_video.mp4">
@@ -50,7 +51,7 @@
     <div class="contenedor-nosotros contenedor">
         <div class="texto-nosotros">
             <p class="bienvenida">Bienvenido a!</p>
-            <h1>Ristorante Turilli</h1>
+            <h1>Restorante Tucalla</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat delectus porro suscipit
                 architecto ab impedit accusantium quod voluptate quaerat odio sunt quisquam odit, sapiente aut esse
                 possimus nulla totam!
@@ -76,58 +77,67 @@
         <div class="botones-platillos">
             <button class="todos btn btn-verde">Todos</button>
             <button class="ensaladas btn btn-verde">Ensaladas</button>
-            <button class="pasta btn btn-verde">Pasta</button>
-            <button class="pizza btn btn-verde">Pizza</button>
+            <button class="pasta btn btn-verde">Pastas</button>
+            <button class="pizza btn btn-verde">Pizzas</button>
             <button class="postres btn btn-verde">Postres</button>
         </div>
         <div class="platillos">
             <div class="platillo" data-platillo="ensalada">
-                <img data-src="assets/img/ensalada.webp" alt="ensalada">
+                <img data-src="/IMAGE/ensalada.webp" alt="ensalada">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
-                    <p>$40.0</p>
+                    <p>$300.0</p>
                     <button><i class="fas fa-shopping-basket"></i></button>
                 </div>
             </div>
             <div class="platillo" data-platillo="ensalada">
-                <img data-src="assets/img/ensalada2.webp" alt="ensalada">
-                <h2>Quinoa</h2>
-                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <img data-src="/IMAGE/ensalada2.webp" alt="ensalada">
+                <h2>Palta</h2>
+                <p>Quinoa, rabanos, tomate, aceitunas, cereal.</p>
                 <div class="precio">
-                    <p>$40.0</p>
+                    <p>$400.0</p>
                     <button><i class="fas fa-shopping-basket"></i></button>
                 </div>
             </div>
             <div class="platillo" data-platillo="ensalada">
-                <img data-src="assets/img/ensalada2.webp" alt="ensalada">
-                <h2>Quinoa</h2>
-                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <img data-src="/IMAGE/ensalada3.webp" alt="ensalada">
+                <h2>Mixta</h2>
+                <p>pan, tocino, tomate, aceitunas, lechuga.</p>
+                <div class="precio">
+                    <p>$660.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="/IMAGE/pasta1.webp" alt="pasta">
+                <h2>Tallarin</h2>
+                <p>albaca, queso, tomate, aceitunas, laurel.</p>
+                <div class="precio">
+                    <p>$400.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="/IMAGE/pasta2.webp" alt="pasta">
+                <h2>Casera</h2>
+                <p>queso, nuez, tomate, aceitunas, ajo.</p>
+                <div class="precio">
+                    <p>$500.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="/IMAGE/pasta3.webp" alt="pasta">
+                <h2>Verde</h2>
+                <p>albaca, queso, ajo, tuco, cereal.</p>
                 <div class="precio">
                     <p>$40.0</p>
                     <button><i class="fas fa-shopping-basket"></i></button>
                 </div>
             </div>
-            <div class="platillo" data-platillo="pasta">
-                <img data-src="assets/img/pasta1.webp" alt="pasta">
-                <h2>Quinoa</h2>
-                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
-                <div class="precio">
-                    <p>$40.0</p>
-                    <button><i class="fas fa-shopping-basket"></i></button>
-                </div>
-            </div>
-            <div class="platillo" data-platillo="pasta">
-                <img data-src="assets/img/pasta2.webp" alt="pasta">
-                <h2>Quinoa</h2>
-                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
-                <div class="precio">
-                    <p>$40.0</p>
-                    <button><i class="fas fa-shopping-basket"></i></button>
-                </div>
-            </div>
-            <div class="platillo" data-platillo="pasta">
-                <img data-src="assets/img/pasta2.webp" alt="pasta">
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="/IMAGE/pizza1.webp" alt="pizza">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -136,7 +146,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="pizza">
-                <img data-src="assets/img/pizza1.webp" alt="pizza">
+                <img data-src="/IMAGE/pizza2.webp" alt="pizza">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -145,16 +155,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="pizza">
-                <img data-src="assets/img/pizza2.webp" alt="pizza">
-                <h2>Quinoa</h2>
-                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
-                <div class="precio">
-                    <p>$40.0</p>
-                    <button><i class="fas fa-shopping-basket"></i></button>
-                </div>
-            </div>
-            <div class="platillo" data-platillo="pizza">
-                <img data-src="assets/img/pizza2.webp" alt="pizza">
+                <img data-src="/IMAGE/pizza3.webp" alt="pizza">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -163,7 +164,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="postre">
-                <img data-src="assets/img/postres1.webp" alt="postre">
+                <img data-src="/IMAGE/postres1.webp" alt="postre">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -172,7 +173,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="postre">
-                <img data-src="assets/img/postres2.webp" alt="postre">
+                <img data-src="/IMAGE/postres2.webp" alt="postre">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -181,7 +182,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="postre">
-                <img data-src="assets/img/postres2.webp" alt="postre">
+                <img data-src="/IMAGE/postres3.webp" alt="postre">
                 <h2>Quinoa</h2>
                 <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
                 <div class="precio">
@@ -194,9 +195,9 @@
 
     <div class="separador">
         <div class="contenido-separador contenedor">
-            <h2>Comida italiana para empezar el día</h2>
-            <p>Empieza tu día comiedo deliciosa comida o un café italiano</p>
-            <a href="#" class="btn btn-verde">Ordenar ahora</a>
+            <h2>Buena comida para empezara  el día</h2>
+            <p>Empieza tu día comiedo deliciosa comida o un café</p>
+            <a href="./homepage.html" class="btn btn-verde">Ordenar ahora</a>
         </div>
     </div>
 
@@ -213,10 +214,10 @@
                     natus tempora recusandae hic laborum error ducimus repellat, laudantium temporibus tenetur totam
                     sint
                     consequuntur eligendi! Asperiores, ad.</p>
-                <a href="#" class="btn btn-verde">Leer Bíografia</a>
+                <a href="https://en.wikipedia.org/wiki/Massimiliano_Alajmo" target="_blank" class="btn btn-verde">Leer Bíografia</a>
             </div>
             <div class="imagen-chef">
-                <img data-src="/assets/img/chef.webp" alt="fotografia del chef">
+                <img data-src="/IMAGE/chef.webp" alt="fotografia del chef">
             </div>
         </div>
     </section>
@@ -225,9 +226,9 @@
 
         <div class="informacion-contacto">
             <h3>Contactanos</h3>
-            <p><i class="fas fa-map-marker-alt"></i>23. Roma Italia 75012</p>
-            <p><i class="fas fa-envelope"></i> luca@turilli.it</p>
-            <p><i class="fas fa-phone-alt"></i>+31123410921</p>
+            <p><i class="fas fa-map-marker-alt"></i>23. General paz 7012</p>
+            <p><i class="fas fa-envelope"></i> juli@turilli.it</p>
+            <p><i class="fas fa-phone-alt"></i>3512627430</p>
             <div class="redes-sociales">
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-twitter-square"></i>
@@ -250,7 +251,7 @@
             </div>
             <div class="input-formulario">
                 <label for="telefono">Teléfono</label>
-                <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+                <input type="tel" placeholder="+54 9 3512627430" id="telefono">
             </div>
             <div class="input-formulario">
                 <label for="mensaje">Mensaje</label>
@@ -266,12 +267,12 @@
         <div class="contenedor-piepagina contenedor">
             <div class="info">
                 <h3>Dirección</h3>
-                <p>23.Roma Italia 75012</p>
+                <p>23. General paz 7012</p>
             </div>
             <div class="info">
                 <h3>Días especiales</h3>
                 <p>Sabados y Jueves 7am - 11pm</p>
-                <p>+3123410921</p>
+                <p>+54 9 3512627430</p>
             </div>
             <div class="info">
                 <h3>Horarios</h3>
@@ -285,7 +286,7 @@
         </div>
     </div>
     <footer class="footer">
-        <p>Todos los derechos reservados &copy; 2021 Risotrante Turilli, desarrollado por Azael</p>
+        <p>Todos los derechos reservados &copy; 2021 Restorante Tucalla</p>
     </footer>
     <script src="../JS/homepage.js"></script>
 

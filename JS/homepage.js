@@ -114,3 +114,11 @@ const limpiarHtml = (contenedor) =>{
         contenedor.removeChild(contenedor.firstChild);
     }
 }
+
+
+
+  
+  const closeSesion = () => {
+    localStorage.removeItem('userLog');
+    window.location = '/index.html';
+  };
