@@ -1,31 +1,25 @@
-
-const login = document.querySelector('.login');
-
 const userLogin = (event) => {
-  event.preventDefault()
-  const emailInput =document.getElementById("useremail").value.toLowerCase();
-  const passwordInput = document.getElementById("contrasena").value;
-  console.log(emailInput);
-  console.log(passwordInput);
-  const Email = localStorage.getItem("email");
-  const PassWord = localStorage.getItem("pars");
-  console.log(Email);
-  console.log(PassWord) ;
-  if( emailInput == "" && passwordInput == ""){
-    alert("opp")
-}
-else
-{
-    if(emailInput == Email && passwordInput == PassWord){
-        alert("si")
-        
+    event.preventDefault()
+    const emailInput =document.getElementById("useremail").value.toLowerCase();
+    const passwordInput = document.getElementById("contrasena").value;
+    const emailValidation = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    if (!emailValidation.test(emailInput)) {
+    alert('El email no tiene un formato correcto');
+    return;
+    }
+    const Email = localStorage.getItem("email");
+    const Password = localStorage.getItem("pars");
+ 
+  
+    if(emailInput == Email && passwordInput == Password){
+    alert('Bienvenido');
+    
+    window.location = '../PAGES/homepage.html';
+     
     }else
     {
-        alert("no")
+        alert('Usuario o contraseña incorrecto.');
     }
-};
-
-
 };
 
 

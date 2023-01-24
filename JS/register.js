@@ -7,6 +7,6 @@ let  userRegister = () => {
   localStorage.setItem("user",usr);
   localStorage.setItem("email",email);
   localStorage.setItem("pars",pass);
-  window.location = '../index.html';
-}
+
+};
 
