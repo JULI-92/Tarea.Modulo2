@@ -104,6 +104,13 @@ input:focus~.barra::before{
  
 }
 
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #806AB3;
+  padding-top: 28px;
+}
 
 
 button{

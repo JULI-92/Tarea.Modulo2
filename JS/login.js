@@ -2,8 +2,8 @@ const userLogin = (event) => {
     event.preventDefault()
     const emailInput =document.getElementById("useremail").value.toLowerCase();
     const passwordInput = document.getElementById("contrasena").value;
-    const emailValidation = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    if (!emailValidation.test(emailInput)) {
+    const emailValidatin = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    if (!emailValidatin.test(emailInput)) {
     alert('El email no tiene un formato correcto');
     return;
     }

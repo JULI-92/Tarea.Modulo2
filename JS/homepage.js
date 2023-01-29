@@ -31,9 +31,7 @@ const botonCerrar = () =>{
     btnCerrar.textContent = 'x';
     btnCerrar.classList.add('btn-cerrar');
 
-    // while(navegacion.children[5]){
-    //     navegacion.removeChild(navegacion.children[5]);
-    // }
+    
     navegacion.appendChild(btnCerrar);   
     cerrarMenu(btnCerrar,overlay);
     
@@ -119,6 +117,6 @@ const limpiarHtml = (contenedor) =>{
 
   
   const closeSesion = () => {
-    localStorage.removeItem('userLog');
+   
     window.location = '/index.html';
   };
