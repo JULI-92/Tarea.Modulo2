@@ -8,7 +8,6 @@
 }
 html{
   box-sizing: border-box;
-  /*1rem = 10px*/
   font-size: 62.5%;
 }
 body{
@@ -352,7 +351,7 @@ video{
   height: 3.8rem;
 }
 .separador{
-  background-image: url('../assets/img/ensalada.webp');
+  background-image: url('../IMAGE/ensalada.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

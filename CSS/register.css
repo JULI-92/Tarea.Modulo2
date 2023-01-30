@@ -97,12 +97,6 @@ input:focus~.barra::before{
   width: 100%;
 }
 
-.link {
-  color:#1d5bce ;
-  margin-bottom: 15px;
-  text-decoration: none;
- 
-}
 
 .warnings{
   width: 200px;
@@ -111,6 +105,15 @@ input:focus~.barra::before{
   color: #806AB3;
   padding-top: 28px;
 }
+
+#link{
+  width: 67px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 110px;
+  color:#1d5bce ;
+  text-decoration: none;
+}
+
 
 
 button{

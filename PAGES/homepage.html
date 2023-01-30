@@ -23,10 +23,10 @@
                 </div>
                 <nav class="navegacion ocultar">
                     <a href="#">Inicio</a>
-                    <a href="nosotros">Sobre Nosotros</a>
-                    <a href="#">Menú</a>
-                    <a href="#">Chef</a>
-                    <a href="#">Contacto</a>
+                    <a href="#nosotros">Sobre Nosotros</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#chef">Chef</a>
+                    <a href="#contacto">Contacto</a>
                     <a href="#" onclick="closeSesion()">Cerrar Sesion</a>
                       
                 </nav>
@@ -39,7 +39,7 @@
             <div class="contenedor-encabezado">
                 <div class="texto-encabezado">
                     <h2>Hospitalidad!</h2>
-                    <a href="#" class="btn bordes">Nuestro menú</a>
+                    <a href="#menu" class="btn bordes">Nuestro menú</a>
                 </div>
                 <video autoplay loop muted>
                     <source src="/IMAGE/bg_video.mp4">
@@ -48,7 +48,7 @@
         </div>
     </header>
 
-    <div id="nosotros" class="contenedor-nosotros contenedor">
+    <section id="nosotros" class="contenedor-nosotros contenedor">
         <div class="texto-nosotros">
             <p class="bienvenida">Bienvenido a!</p>
             <h1>Restorante Tucalla</h1>
@@ -59,7 +59,7 @@
                 similique ab, illo debitis ullam ipsa labore quidem vitae sunt et quasi veritatis? Excepturi ex non
                 cumque.
             </p>
-            <a href="#" class="btn btn-rojo">Contactar</a>
+            <a href="#contacto" class="btn btn-rojo">Contactar</a>
         </div>
         <div class="imagenes-nosotros">
             <div class="imagen1">
@@ -70,9 +70,9 @@
                 <img data-src="/IMAGE/nosotros3.webp" alt="plato con pastas">
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="menu contenedor">
+    <section id="menu" class="menu contenedor">
         <h2 class="texto-platillos">Platillos populares</h2>
         <div class="botones-platillos">
             <button class="todos btn btn-verde">Todos</button>
@@ -197,11 +197,11 @@
         <div class="contenido-separador contenedor">
             <h2>Buena comida para empezara  el día</h2>
             <p>Empieza tu día comiedo deliciosa comida o un café</p>
-            <a href="./homepage.html" class="btn btn-verde">Ordenar ahora</a>
+            <a href="#menu" class="btn btn-verde">Ordenar ahora</a>
         </div>
     </div>
 
-    <section class="chef contenedor">
+    <section id="chef" class="chef contenedor">
         <h2>Chef ejecutivo</h2>
         <div class="contenido-chef">
             <div class="texto-chef">
@@ -222,12 +222,12 @@
         </div>
     </section>
 
-    <div class="formulario-contacto contenedor">
+    <div id="contacto" class="formulario-contacto contenedor">
 
         <div class="informacion-contacto">
             <h3>Contactanos</h3>
             <p><i class="fas fa-map-marker-alt"></i>23. General paz 7012</p>
-            <p><i class="fas fa-envelope"></i> juli@turilli.it</p>
+            <p><i class="fas fa-envelope"></i> juli@gmail.com</p>
             <p><i class="fas fa-phone-alt"></i>3512627430</p>
             <div class="redes-sociales">
                 <i class="fab fa-facebook-square"></i>
@@ -258,7 +258,7 @@
                 <textarea></textarea>
             </div>
             <div class="btn-formulario">
-                <input type="submit" class="btn btn-verde" value="Enviar">
+                <input type="reset" class="btn btn-verde" value="Enviar">
             </div>
             
         </form>

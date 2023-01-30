@@ -112,11 +112,13 @@ const limpiarHtml = (contenedor) =>{
         contenedor.removeChild(contenedor.firstChild);
     }
 }
+ 
+    
+   if (!localStorage.getItem('Email') ) {
+    window.location = '../index.html';
+     }
 
-
-
-  
   const closeSesion = () => {
-   
-    window.location = '/index.html';
+    localStorage.removeItem('Email');
+    window.location = '../index.html';
   };
