@@ -30,6 +30,4 @@ let  userRegister = () => {
   
 };
 
-document.oncontextmenu = function () {
-  return false;
-};
+
