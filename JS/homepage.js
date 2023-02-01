@@ -30,19 +30,17 @@ const botonCerrar = () =>{
     body.appendChild(overlay);
     btnCerrar.textContent = 'x';
     btnCerrar.classList.add('btn-cerrar');
-
-    
     navegacion.appendChild(btnCerrar);   
     cerrarMenu(btnCerrar,overlay);
     
 }
 
 const observer = new IntersectionObserver((entries, observer)=>{
-        entries.forEach(entry=>{
-            if(entry.isIntersecting){
-                const imagen = entry.target;
-                imagen.src = imagen.dataset.src;
-                observer.unobserve(imagen);
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            const imagen = entry.target;
+            imagen.src = imagen.dataset.src;
+            observer.unobserve(imagen);
             }
         }); 
 });

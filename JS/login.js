@@ -6,24 +6,18 @@ const userLogin = (event) => {
     if (!emailValidatin.test(emailInput)) {
     alert('El email no tiene un formato correcto');
     return;
-    }
+    };
 
     const Email = localStorage.getItem('email');
     const Password = localStorage.getItem('pars');
     
-  
     if(emailInput == Email && passwordInput == Password){
         localStorage.setItem('Email',Email);
-        
-    alert('Bienvenido');
-    
-    window.location = '../PAGES/homepage.html';
-     
-    }else
-    {
+        alert('Bienvenido');
+        window.location = '../PAGES/homepage.html';
+     }else{
         alert('Usuario o contraseña incorrecto.');
     }
-
 };
 
 document.oncontextmenu = function () {
