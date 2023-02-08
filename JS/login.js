@@ -20,9 +20,8 @@ const userLogin = (event) => {
     }
 };
 
-document.oncontextmenu = function () {
-    return false;
-  };
+
+
 
 
 
